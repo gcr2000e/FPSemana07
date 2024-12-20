@@ -29,7 +29,7 @@ class TransferenciaBancaria(Pagamento):
         self.conta = conta
 
     def processar_pagamento(self, valor):
-        print(f"€{valor:.2f} com Transferência Bancária banco: ({self.banco}, conta: {self.conta})")
+        print(f"€{valor:.2f} com Transferência Bancária (banco: {self.banco}, conta: {self.conta})")
 
 def realizar_pagamento(pagamento, valor):
     pagamento.processar_pagamento(valor)
